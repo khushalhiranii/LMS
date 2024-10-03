@@ -131,7 +131,7 @@ const Header = ({ isSticky = true }) => {
               animate={{ height: "auto", opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
-              className="absolute top-20 right-0 w-full bg-[#248de4] text-white p-4 z-30 flex flex-col lg:hidden"
+              className="absolute top-20 right-0 w-full bg-[#248de4] text-white-10 p-4 z-30 flex flex-col lg:hidden"
             >
               <motion.button
                 whileTap={{ scale: 0.85 }}

@@ -66,7 +66,7 @@ const Header = ({ isSticky = true }) => {
         </Link>
 
         {/* Search Bar for larger screens */}
-        <div className="flex justify-start items-center w-full">
+        <div className="flex flex-row justify-end items-center w-full sm:justify-start gap-3 ">
           <div className="items-center flex-1 bg-white-10 mx-10 rounded-full px-3 hidden sm:flex">
             <SearchIcon className="animate-spin" />
             <input
@@ -77,7 +77,7 @@ const Header = ({ isSticky = true }) => {
           </div>
 
           {/* Hamburger and Search Icon for small/medium screens */}
-          <div className="flex-1 flex items-center justify-end gap-4">
+          {/* <div className="flex-1 flex items-center justify-end gap-4 lg:hidden"> */}
             {/* Search Icon only for small screens */}
             <div className="sm:hidden">
               <SearchIcon toggleSearch={toggleSearch} fill="white" />
@@ -87,7 +87,7 @@ const Header = ({ isSticky = true }) => {
             <div className="lg:hidden">
               <HamburgerIcon toggleMenu={toggleMenu} />
             </div>
-          </div>
+          {/* </div> */}
 
 
           {/* Menu for larger screens */}

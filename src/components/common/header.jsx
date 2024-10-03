@@ -169,7 +169,7 @@ const Header = ({ isSticky = true }) => {
               <motion.button
                 whileTap={{ scale: 0.85 }}
                 onClick={() => navigation("/sign-up")}
-                className="hover:bg-linear-grad-yellow-10 text-black bg-white-10 px-3 h-10 text-center rounded-sm"
+                className="hover:bg-linear-grad-yellow-10 text-black-40 bg-white-10 px-3 h-10 text-center rounded-sm"
               >
                 Sign Up
               </motion.button>

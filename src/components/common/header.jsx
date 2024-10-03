@@ -5,11 +5,11 @@ import { useRouter } from "next/navigation";
 import { imageUrlConstant } from "@/constants";
 import { motion, AnimatePresence } from "framer-motion";
 
-const SearchIcon = ({ toggleSearch }) => (
+const SearchIcon = ({ toggleSearch, fill = "currentColor" }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 20 20"
-    fill="currentColor"
+    fill={fill}
     className="size-5 w-6 h-6 cursor-pointer text-white"
     onClick={toggleSearch}
   >
@@ -27,7 +27,7 @@ const HamburgerIcon = ({ toggleMenu }) => (
     fill="none"
     viewBox="0 0 24 24"
     strokeWidth={1.5}
-    stroke="currentColor"
+    stroke="white"
     className="w-6 h-6 cursor-pointer text-white"
     onClick={toggleMenu}
   >
@@ -80,7 +80,7 @@ const Header = ({ isSticky = true }) => {
           <div className="flex-1 flex items-center justify-end gap-4">
             {/* Search Icon only for small screens */}
             <div className="sm:hidden">
-              <SearchIcon toggleSearch={toggleSearch} />
+              <SearchIcon toggleSearch={toggleSearch} fill="white" />
             </div>
             
             {/* Hamburger Icon for screens smaller than large */}

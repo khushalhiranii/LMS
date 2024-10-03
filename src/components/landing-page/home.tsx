@@ -18,7 +18,7 @@ const HomePage = () => {
   return (
     <>
       <img
-        className="w-full max-h-[600px] object-contain lg:min-h-[441px]"
+        className="w-full max-h-[600px] lg:min-h-[441px]"
         src={imageUrlConstant?.mainBanner}
         loading="lazy"
         alt="banner"

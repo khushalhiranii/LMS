@@ -5,6 +5,7 @@ import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as HotToaster } from "react-hot-toast"
+import Head from "next/head";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -18,6 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <Head>
+        <link rel="icon" href="/springlearns-logo.jpg"/>
+      </Head>
       <body
         className={cn(
           "min-h-screen overflow-x-hidden w-fit-content bg-background font-sans antialiased",
